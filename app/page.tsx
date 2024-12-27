@@ -23,6 +23,16 @@ const page = () => {
             SVG line animation
           </button>
         </Link>
+        <Link href={"/horizontal-scroll"}>
+          <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg">
+            Horizontal Scroll
+          </button>
+        </Link>
+        <Link href={"/layered-parallax"}>
+          <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg">
+            Layered Parallax
+          </button>
+        </Link>
       </div>
     </div>
   );

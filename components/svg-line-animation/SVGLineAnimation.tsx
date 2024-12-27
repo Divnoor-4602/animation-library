@@ -6,7 +6,7 @@ import React from "react";
 const SVGLineAnimation = () => {
   return (
     <>
-      <div className="h-screen w-full bg-lime-950 " />
+      <div className="h-screen w-full bg- " />
       <div className="min-h-screen w-full bg-green-950 text-yellow-50 flex items-center justify-center">
         <h1 className="max-w-5xl text-6xl font-normal tracking-tighter">
           <span className="relative">
