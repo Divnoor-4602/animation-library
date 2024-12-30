@@ -33,6 +33,11 @@ const page = () => {
             Layered Parallax
           </button>
         </Link>
+        <Link href={"/drag-n-drop"}>
+          <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg">
+            Drag n Drop
+          </button>
+        </Link>
       </div>
     </div>
   );
