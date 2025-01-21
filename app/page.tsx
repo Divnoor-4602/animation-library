@@ -48,6 +48,11 @@ const page = () => {
             Smooth Parallax Scrolling
           </button>
         </Link>
+        <Link href={"/text-parallax"}>
+          <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg">
+            Text Parallax
+          </button>
+        </Link>
       </div>
     </div>
   );
