@@ -1,3 +1,5 @@
+"use client";
+
 import Reveal from "@/components/on-scroll-reveal/Reveal";
 import React from "react";
 

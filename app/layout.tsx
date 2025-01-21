@@ -6,6 +6,7 @@ import { Instrument_Serif } from "next/font/google";
 const instrument = Instrument_Serif({
   variable: "--font-instrument-serif",
   weight: "400",
+  subsets: ["latin"],
 });
 
 const geistSans = Geist({

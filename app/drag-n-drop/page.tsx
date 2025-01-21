@@ -1,4 +1,6 @@
-import { NotionKanban } from "@/components/drag-n-drop/NotionKanban";
+"use client";
+
+import NotionKanban from "@/components/drag-n-drop/NotionKanban";
 import React from "react";
 
 const Page = () => {

@@ -4,14 +4,15 @@ import React, { useEffect, useRef } from "react";
 // import an image
 import image from "../../public/assets/images/picture.jpeg";
 import Image, { StaticImageData } from "next/image";
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion, MotionValue, useScroll, useTransform } from "motion/react";
 import Lenis from "@studio-freight/lenis";
 
 const Page = () => {
   useEffect(() => {
     const lenis = new Lenis();
 
-    lenis.on("scroll", (e) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    lenis.on("scroll", (e: any) => {
       console.log(e);
     });
 
@@ -63,7 +64,15 @@ const TextParallax = () => {
 };
 
 // slider
-const Slider = ({ left, progress, direction }) => {
+const Slider = ({
+  left,
+  progress,
+  direction,
+}: {
+  left: string;
+  progress: MotionValue<number>;
+  direction: "left" | "right";
+}) => {
   const dir = direction === "left" ? -1 : 1;
   const x = useTransform(progress, [0, 1], [-250 * dir, 250 * dir]);
 

@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  cubicBezier,
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-} from "motion/react";
+import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import { CARDS } from "@/constants";
 import Image from "next/image";
 import { useRef } from "react";

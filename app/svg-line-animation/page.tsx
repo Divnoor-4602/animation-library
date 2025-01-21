@@ -1,3 +1,5 @@
+"use client";
+
 import SVGLineAnimation from "@/components/svg-line-animation/SVGLineAnimation";
 
 const Page = () => {

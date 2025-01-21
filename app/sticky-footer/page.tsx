@@ -1,3 +1,5 @@
+"use client";
+
 import Content from "../../components/sticky-footer/Content";
 import React from "react";
 

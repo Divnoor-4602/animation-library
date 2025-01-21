@@ -37,7 +37,8 @@ const Home = () => {
   useEffect(() => {
     const lenis = new Lenis();
 
-    lenis.on("scroll", (e) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    lenis.on("scroll", (e: any) => {
       console.log(e);
     });
 
