@@ -58,6 +58,11 @@ const page = () => {
             Zoop
           </button>
         </Link>
+        <Link href={"/creative-buttons"}>
+          <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg">
+            Creative Buttons
+          </button>
+        </Link>
       </div>
     </div>
   );
