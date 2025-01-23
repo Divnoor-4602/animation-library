@@ -53,6 +53,11 @@ const page = () => {
             Text Parallax
           </button>
         </Link>
+        <Link href={"/zoop"}>
+          <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg">
+            Zoop
+          </button>
+        </Link>
       </div>
     </div>
   );
