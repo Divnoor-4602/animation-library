@@ -9,6 +9,7 @@ const CreativeButtons = () => {
     <main className="h-screen grid  place-content-center bg-gray-200 gap-8">
       <PushButton />
       <AboutButton />
+      <LearnMoreButton />
     </main>
   );
 };
@@ -38,7 +39,7 @@ const PushButton = () => {
   return (
     <>
       <motion.div
-        className="uppercase font-bold bg-white py-4 px-8 rounded-[28px] overflow-hidden text-nowrap relative flex justify-center items-center"
+        className="uppercase font-bold bg-white py-4 px-8 rounded-[28px] overflow-hidden text-nowrap relative flex justify-center items-center shadow-sm"
         initial="intial"
         whileHover={"hovered"}
       >
@@ -50,7 +51,7 @@ const PushButton = () => {
         </motion.div>
         {/* animatable background */}
         <motion.div
-          className="absolute inset-0 flex items-center justify-center  rounded-[28px] bg-yellow-300"
+          className="absolute inset-0 flex items-center justify-center rounded-[28px] bg-yellow-300"
           variants={boxVariants}
           transition={{ duration: 0.25 }}
         >
@@ -103,7 +104,7 @@ const AboutButton = () => {
   return (
     <>
       <motion.div
-        className="rounded-[28px] bg-white relative  flex items-center gap-4 w-[160px] h-[55px] justify-center overflow-hidden"
+        className="rounded-[28px] bg-white relative  flex items-center gap-4 w-[160px] h-[55px] justify-center overflow-hidden shadow-sm"
         initial="initial"
         whileHover={"hovered"}
       >
@@ -138,7 +139,18 @@ const AboutButton = () => {
 };
 
 const LearnMoreButton = () => {
-  return <></>;
+  return (
+    <>
+      <div className="rounded-[28px] bg-white relative  flex items-center gap-4 w-[160px] h-[55px] justify-center overflow-hidden shadow-sm">
+        <motion.div className="uppercase tracking-tighter font-bold text-xl flex items-center w-fit whitespace-nowrap gap-2">
+          <span className="item">Learn more</span>
+          <span className="item">Learn more</span>
+          <span className="item">Learn more</span>
+          <span className="item">Learn more</span>
+        </motion.div>
+      </div>
+    </>
+  );
 };
 
 export default CreativeButtons;
