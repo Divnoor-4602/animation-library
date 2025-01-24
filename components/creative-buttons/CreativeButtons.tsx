@@ -35,11 +35,6 @@ const PushButton = () => {
     },
   };
 
-  const arrowVariants = {
-    initial: {},
-    hovered: {},
-  };
-
   return (
     <>
       <motion.div
@@ -96,6 +91,15 @@ const AboutButton = () => {
     hovered: { x: "-20%", color: "white" },
   };
 
+  const arrowVariants = {
+    initial: {
+      x: 30,
+    },
+    hovered: {
+      x: 0,
+    },
+  };
+
   return (
     <>
       <motion.div
@@ -121,8 +125,12 @@ const AboutButton = () => {
           ABOUT US
         </motion.div>
         {/* arrow animation */}
-        <motion.div className="absolute right-[11px]">
-          <ArrowRight className="text-black" />
+        <motion.div
+          className="absolute right-[15px]"
+          variants={arrowVariants}
+          transition={{ duration: 0.15 }}
+        >
+          <ArrowRight className="text-white" />
         </motion.div>
       </motion.div>
     </>
