@@ -137,4 +137,8 @@ const AboutButton = () => {
   );
 };
 
+const LearnMoreButton = () => {
+  return <></>;
+};
+
 export default CreativeButtons;
