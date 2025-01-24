@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import { delay, motion } from "motion/react";
+import { motion } from "motion/react";
 
 const CreativeButtons = () => {
   return (
-    <main className="h-screen grid  place-content-center bg-gray-300 gap-8">
+    <main className="h-screen grid  place-content-center bg-gray-200 gap-8">
       <PushButton />
       <AboutButton />
     </main>
@@ -37,7 +37,7 @@ const PushButton = () => {
   return (
     <>
       <motion.div
-        className="uppercase font-bold bg-white py-4 px-8 rounded-[28px] overflow-hidden text-nowrap relative"
+        className="uppercase font-bold bg-white py-4 px-8 rounded-[28px] overflow-hidden text-nowrap relative flex justify-center items-center"
         initial="intial"
         whileHover={"hovered"}
       >
@@ -76,13 +76,32 @@ const PushButton = () => {
 };
 
 const AboutButton = () => {
+  const bgVariants = {
+    initial: {
+      scale: 0.05,
+    },
+    hovered: {
+      scale: 1,
+    },
+  };
+
   return (
     <>
-      <div className="rounded-[28px] px-8 py-4 bg-white relative overflow-hidden">
-        <div className="text-xl font-medium tracking-tight uppercase">
-          About us
-        </div>
-      </div>
+      <motion.div
+        className="rounded-[28px] bg-white relative overflow-hidden flex items-center gap-4 w-[160px] h-[55px] justify-center"
+        initial="initial"
+        whileHover={"hovered"}
+      >
+        <motion.div
+          className="bg-blue-800 rounded-full size-[200px] absolute"
+          variants={bgVariants}
+          transition={{
+            type: "spring",
+            bounce: 0.1,
+            duration: 0.25,
+          }}
+        />
+      </motion.div>
     </>
   );
 };
