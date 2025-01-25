@@ -15,3 +15,16 @@
     transform: translate3d(-100%, 0, 0);
   }
 }
+
+body {
+  transition-property: filter, background, transform, opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.page-transition {
+  opacity: 0;
+  background-color: purple;
+  transform: translateY(40px);
+  filter: blur(30px);
+}
