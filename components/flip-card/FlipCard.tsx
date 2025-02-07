@@ -40,7 +40,7 @@ const FlipCard = () => {
 const FrontCard = () => {
   return (
     <motion.div
-      className="bg-orange-500 w-full h-full rounded-xl border-2 border-dashed border-orange-900 absolute"
+      className="bg-orange-500 w-full h-full rounded-3xl border-2 border-dashed border-orange-900 absolute"
       style={{
         backfaceVisibility: "hidden",
       }}
@@ -59,7 +59,7 @@ const FrontCard = () => {
 const BackCard = () => {
   return (
     <motion.div
-      className="bg-blue-500 w-full h-full rounded-xl border-2 border-dashed border-blue-900 absolute"
+      className="bg-blue-500 w-full h-full rounded-3xl border-2 border-dashed border-blue-900 absolute"
       style={{
         transform: "rotateX(180deg)", // Ensure back card starts flipped
         backfaceVisibility: "hidden",
