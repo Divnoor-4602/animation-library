@@ -59,7 +59,7 @@ const FrontCard = () => {
 const BackCard = () => {
   return (
     <motion.div
-      className="bg-blue-500 w-full h-full rounded-3xl border-2 border-dashed border-blue-900 absolute"
+      className="bg-blue-900 w-full h-full rounded-3xl border-2 border-dashed border-blue-500 absolute"
       style={{
         transform: "rotateX(180deg)", // Ensure back card starts flipped
         backfaceVisibility: "hidden",
@@ -68,8 +68,8 @@ const BackCard = () => {
       <div className="bg-blue-200 text-blue-600 font-bold w-fit px-4 py-1 rounded-2xl text-sm mt-4 ml-4">
         Answer
       </div>
-      <div className="text-blue-900 text-2xl font-bold mt-8 ml-4">Paris</div>
-      <hr className="border-t-2 border-dashed border-blue-900 w-full mt-4" />
+      <div className="text-white text-2xl font-bold mt-8 ml-4">Paris</div>
+      <hr className="border-t-2 border-dashed border-blue-500 w-full mt-4" />
       <button className="absolute bottom-4 left-4">
         <ArrowLeft className="text-blue-900" />
       </button>
